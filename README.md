@@ -1,2 +1,0 @@
-# PSO
-Particle Swarm Optimization
