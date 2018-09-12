@@ -168,8 +168,8 @@ def runPSO(X, pbest_particles, pbest_fitness, gbest_particle, gbest_fitness, bou
         gbest_fitness = pbest_fitness[np.argmax(pbest_fitness, axis=0)]
         
         # Update personal best particles and deduce the new global best particle
-        particles_left = np.in1d(pbest_fitness, pbest_fitness_prev)
-        pbest_particles[particles_left, :] = X[particles_left, :]
+        outperforming_particles = np.greater(pbest_fitness, pbest_fitness_prev).reshape(M,)
+        pbest_particles[outperforming_particles, :] = X[outperforming_particles, :]
         gbest_particle = pbest_particles[np.argmax(pbest_fitness, axis=0),:]
         
         # Update the velocities of the particles
