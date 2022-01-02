@@ -2,4 +2,4 @@
 
 Vectorized implementation of the standard Particle Swarm Optimization (PSO) algorithm in Python using Numpy.
 
-Link to article: https://medium.com/@deepulse/swarm-intelligence-particle-swarm-optimization-e3bdfd1d248
+Additional reading: https://towardsdatascience.com/swarm-intelligence-swarm-based-dimensionality-reduction-dfb3cdc55259
